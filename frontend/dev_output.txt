@@ -1,0 +1,1025 @@
+
+> fitpulse-pro@0.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+   ▲ Next.js 15.1.7
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1531ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.6s (695 modules)
+ GET / 307 in 4996ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 3.7s (1716 modules)
+API_BASE configured as: http://127.0.0.1:8000
+ GET /dashboard 200 in 3693ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ ✓ Compiled in 706ms (1730 modules)
+ GET / 307 in 104ms
+API_BASE configured as: http://127.0.0.1:8000
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 87ms
+ GET / 307 in 36ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 64ms
+ GET / 307 in 25ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 52ms
+ GET / 307 in 20ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 47ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 45ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 46ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 49ms
+ GET / 307 in 16ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 46ms
+ GET / 307 in 16ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 42ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 90ms
+ GET / 307 in 30ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 66ms
+ GET / 307 in 27ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 64ms
+ GET / 307 in 34ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 59ms
+ GET / 307 in 24ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 60ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 61ms
+ GET / 307 in 22ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 53ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 55ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 46ms
+ GET / 307 in 16ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 45ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 46ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 16ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 16ms
+ GET /dashboard 200 in 30ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 52ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 49ms
+ GET / 307 in 23ms
+ GET /dashboard 200 in 27ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 87ms
+ GET / 307 in 40ms
+ GET /dashboard 200 in 33ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 69ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 70ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 62ms
+ GET / 307 in 25ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 75ms
+ GET / 307 in 20ms
+ GET /dashboard 200 in 27ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 63ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 55ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 55ms
+ GET / 307 in 31ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 59ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 51ms
+ GET / 307 in 19ms
+ GET /dashboard 200 in 22ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 81ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ GET / 307 in 17ms
+ GET /dashboard 200 in 33ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 63ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 49ms
+ GET / 307 in 20ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 49ms
+ GET / 307 in 14ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 57ms
+ GET / 307 in 20ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 44ms
+ GET / 307 in 16ms
+ GET / 307 in 27ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 53ms
+ GET / 307 in 19ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 51ms
+ GET / 307 in 22ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 57ms
+ GET / 307 in 20ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 51ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 59ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 55ms
+ GET / 307 in 25ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 57ms
+ GET / 307 in 32ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 60ms
+ GET / 307 in 25ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 56ms
+ ✓ Compiled in 325ms (805 modules)
+ ✓ Compiled in 372ms (805 modules)
+ ✓ Compiled in 254ms (805 modules)
+ ✓ Compiled in 349ms (805 modules)
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 61ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 62ms
+ GET / 307 in 32ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 60ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 60ms
+ GET / 307 in 28ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 58ms
+ GET / 307 in 23ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 52ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 58ms
+ GET / 307 in 20ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 54ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 59ms
+ GET / 307 in 28ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 55ms
+ GET / 307 in 20ms
+ GET / 307 in 38ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 75ms
+ GET / 307 in 36ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 63ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ GET / 307 in 19ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 52ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 47ms
+ GET / 307 in 18ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 49ms
+ GET / 307 in 21ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 50ms
+ GET / 307 in 20ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 45ms
+ GET / 307 in 17ms
+Dashboard Fetch Error: Error: Failed to fetch dashboard data
+    at Object.getDashboardData (services/api.ts:62:23)
+    at async DashboardPage (app/dashboard/page.tsx:16:24)
+  60 |       headers: getAuthHeaders(token)
+  61 |     });
+> 62 |     if (!res.ok) throw new Error('Failed to fetch dashboard data');
+     |                       ^
+  63 |     const data = await res.json();
+  64 |     return { user: data.user || { username: 'User', email: 'user@example.com', avatarUrl: 'https://ui-avatars.com/api/?name=User', joinDate: '' }, data: data };
+  65 |   },
+ GET /dashboard 307 in 48ms
+ ✓ Compiled in 25ms

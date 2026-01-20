@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block title %}Your Profile | Fitness Platform{% endblock %}
+
+{% block content %}
+<style>
+    .profile-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .profile-meta {
+        display: flex;
+        gap: 16px;
+        font-size: 14px;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+    }
+
+    .profile-action a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        border-radius: 99px;
+        background: var(--accent-primary);
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        transition: opacity 0.2s;
+    }
+
+    .profile-action a:hover {
+        opacity: 0.9;
+        text-decoration: none;
+    }
+
+    .profile-side h4 {
+        margin: 0 0 16px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-secondary);
+    }
+
+    .line {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-subtle);
+        font-size: 14px;
+    }
+
+    .line:last-child {
+        border-bottom: none;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin: 24px 0 8px;
+    }
+
+    .stat-card-small {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .stat-key {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        letter-spacing: 0.05em;
+    }
+
+    .stat-val {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .section-title {
+        margin-top: 40px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        color: var(--text-primary);
+    }
+
+    @media (max-width: 900px) {
+        .profile-hero {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<span class="pill accent" style="margin-bottom: 16px; display: inline-block;">Profile</span>
+
+<div class="profile-hero">
+    <div class="card-premium">
+        <h1 style="margin-bottom: 8px;">{{ profile.user.username }}</h1>
+        <div class="profile-meta">
+            <span>{{ profile.user.email }}</span>
+        </div>
+        <div class="profile-action">
+            <a href="{% url 'edit_profile' %}">Edit Profile</a>
+        </div>
+    </div>
+
+    <div class="card-premium profile-side">
+        <h4>Personal Stats</h4>
+        <div class="line">
+            <span class="text-muted">Gender</span>
+            <span>{{ profile.gender|default:"-" }}</span>
+        </div>
+        <div class="line">
+            <span class="text-muted">Age</span>
+            <span>{{ profile.age|default:"-" }}</span>
+        </div>
+        <div class="line">
+            <span class="text-muted">Height</span>
+            <span>{{ profile.height_cm|default:"-" }} cm</span>
+        </div>
+        <div class="line">
+            <span class="text-muted">Weight</span>
+            <span class="text-weight">{{ profile.weight_kg|default:"-" }} kg</span>
+        </div>
+    </div>
+</div>
+
+<h3 class="section-title">Goals & Targets</h3>
+<div class="info-grid">
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Goal</span>
+        <span class="stat-val text-primary">{{ profile.get_goal_display|default:"-" }}</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Target Weight</span>
+        <span class="stat-val text-weight">{{ profile.target_weight_kg|default:"-" }} kg</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Pace</span>
+        <span class="stat-val">{{ profile.get_goal_pace_display|default:"-" }}</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Fitness Level</span>
+        <span class="stat-val">{{ profile.get_fitness_level_display|default:"-" }}</span>
+    </div>
+</div>
+
+<h3 class="section-title">Daily Habits</h3>
+<div class="info-grid">
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Sleep Target</span>
+        <span class="stat-val text-sleep">{{ profile.sleep_target_hours|default:"-" }} hrs</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Water Target</span>
+        <span class="stat-val text-hydration">{{ profile.water_target_ml|default:"-" }} ml</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Activity Factor</span>
+        <span class="stat-val">{{ profile.get_activity_level_display|default:"-" }}</span>
+    </div>
+</div>
+
+<h3 class="section-title">Nutrition Config</h3>
+<div class="info-grid">
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Daily Calories</span>
+        <span class="stat-val text-nutrition">
+            {{ profile.daily_calories|default:analytics.daily_calories|default:"-" }}
+        </span>
+        <span class="stat-sub">kcal</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Protein</span>
+        <span class="stat-val">
+            {{ profile.protein_g|default:analytics.macros.protein_g|default:"-" }}
+        </span>
+        <span class="stat-sub">g</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Carbs</span>
+        <span class="stat-val">
+            {{ profile.carbs_g|default:analytics.macros.carbs_g|default:"-" }}
+        </span>
+        <span class="stat-sub">g</span>
+    </div>
+    <div class="card-premium stat-card-small">
+        <span class="stat-key">Fats</span>
+        <span class="stat-val">
+            {{ profile.fat_g|default:analytics.macros.fat_g|default:"-" }}
+        </span>
+        <span class="stat-sub">g</span>
+    </div>
+</div>
+
+<h3 class="section-title">System Data</h3>
+<div class="info-grid">
+    <div class="card stat-card-small" style="background: transparent; border: 1px solid var(--border-subtle);">
+        <span class="stat-key">Joined</span>
+        <span class="stat-val" style="font-size: 14px;">{{ profile.created_at|date:"M Y" }}</span>
+    </div>
+    <div class="card stat-card-small" style="background: transparent; border: 1px solid var(--border-subtle);">
+        <span class="stat-key">Last Sync</span>
+        <span class="stat-val" style="font-size: 14px;">{{ profile.updated_at|timesince }} ago</span>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,3 @@
+Comando «python» non trovato, si intendeva forse:
+  comando «python3» da deb python3
+  comando «python» da deb python-is-python3

@@ -1,0 +1,266 @@
+Watching for file changes with StatReloader
+[18/Jan/2026 12:14:40] "HEAD /dashboard/ HTTP/1.1" 401 0
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:14:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:09] "POST /login/ HTTP/1.1" 200 154
+[18/Jan/2026 12:15:09] "GET /dashboard/ HTTP/1.1" 200 5647
+[18/Jan/2026 12:15:09] "GET /dashboard/ HTTP/1.1" 200 5647
+[18/Jan/2026 12:15:12] "GET /dashboard/ HTTP/1.1" 200 5647
+[18/Jan/2026 12:15:12] "GET /dashboard/ HTTP/1.1" 200 5647
+[18/Jan/2026 12:15:24] "POST /login/ HTTP/1.1" 401 31
+[18/Jan/2026 12:15:35] "POST /login/ HTTP/1.1" 200 159
+[18/Jan/2026 12:15:35] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:35] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:36] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:36] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:37] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:37] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:37] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:37] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:37] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:37] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:38] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:39] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:39] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:39] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:39] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:39] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:39] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:40] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:40] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:40] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:40] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:40] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:40] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:41] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:42] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:43] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:43] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:43] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:43] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:44] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:44] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:44] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:44] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:45] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:45] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:45] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:45] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:45] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:45] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:46] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:46] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:46] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:46] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:46] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:46] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:47] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:47] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:47] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:47] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:47] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:47] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:48] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:48] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:48] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:48] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:48] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:48] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:49] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:49] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:49] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:49] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:50] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:50] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:50] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:50] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:51] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:52] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:15:52] "GET /dashboard/ HTTP/1.1" 500 120254
+[18/Jan/2026 12:17:47,171] - Broken pipe from ('127.0.0.1', 34712)
+[18/Jan/2026 12:17:47,226] - Broken pipe from ('127.0.0.1', 53856)
+[18/Jan/2026 12:17:47,227] - Broken pipe from ('127.0.0.1', 53758)
+[18/Jan/2026 12:17:47,227] - Broken pipe from ('127.0.0.1', 53470)
+[18/Jan/2026 12:17:47,228] - Broken pipe from ('127.0.0.1', 54092)
+[18/Jan/2026 12:17:47,228] - Broken pipe from ('127.0.0.1', 53762)
+[18/Jan/2026 12:17:47,228] - Broken pipe from ('127.0.0.1', 53756)
+[18/Jan/2026 12:17:47,229] - Broken pipe from ('127.0.0.1', 53706)
+[18/Jan/2026 12:17:47,229] - Broken pipe from ('127.0.0.1', 53554)
+[18/Jan/2026 12:17:47,230] - Broken pipe from ('127.0.0.1', 54010)
+[18/Jan/2026 12:17:47,231] - Broken pipe from ('127.0.0.1', 53830)
+[18/Jan/2026 12:17:47,232] - Broken pipe from ('127.0.0.1', 53736)
+[18/Jan/2026 12:17:47,232] - Broken pipe from ('127.0.0.1', 53726)
+[18/Jan/2026 12:17:47,233] - Broken pipe from ('127.0.0.1', 53540)
+/home/karim/Scrivania/platform/dashboard/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 18, 2026 - 12:14:18
+Django version 6.0.1, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[18/Jan/2026 12:20:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:27] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:27] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:27] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:27] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:28] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:29] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:30] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:32] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:32] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:32] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:32] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:32] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:33] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:33] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:33] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:33] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:33] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:35] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:35] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:35] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:35] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:35] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:35] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:36] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:36] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:36] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:36] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:36] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:36] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:37] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:45] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:46] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:46] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:51] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:52] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:52] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:52] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:53] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:54] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:55] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:20:55] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:22] "POST /login/ HTTP/1.1" 200 159
+[18/Jan/2026 12:21:22] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:22] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:23] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:23] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:24] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:25] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:25] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:25] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:25] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:26] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:27] "GET /dashboard/ HTTP/1.1" 500 124781
+[18/Jan/2026 12:21:27] "GET /dashboard/ HTTP/1.1" 500 124781

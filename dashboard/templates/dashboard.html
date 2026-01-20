@@ -1,0 +1,687 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | Fitness Platform{% endblock %}
+
+{% block content %}
+<style>
+    /* Dashboard-specific Grid Layouts */
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    /* Today's Sync Card (Left Hero) */
+    .hero-focus {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .date-badge {
+        padding: 6px 14px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-subtle);
+        border-radius: 99px;
+        font-size: 13px;
+        color: var(--text-secondary);
+    }
+
+    /* Rings Container */
+    .rings-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .ring-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 100px;
+    }
+
+    .ring-circle {
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .ring-circle svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+    }
+
+    .circle-bg {
+        fill: none;
+        stroke: rgba(255, 255, 255, 0.05);
+        stroke-width: 2.5;
+    }
+
+    .circle-fill {
+        fill: none;
+        stroke: var(--c);
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        transition: stroke-dasharray 1s ease;
+    }
+
+    .ring-icon {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        font-size: 21px;
+    }
+
+    .ring-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .ring-label {
+        font-size: 13px;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+
+    .ring-value {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text-primary);
+        text-align: center;
+        line-height: 1.2;
+        min-height: 2.4em;
+    }
+
+    /* Quick Actions (Right Hero) */
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .action-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .action-group h5 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        margin-bottom: 4px;
+    }
+
+    .miniform {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 8px;
+    }
+
+    .miniform input {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .miniform button {
+        padding: 8px 16px;
+        font-size: 13px;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    /* Analytics Grid */
+    .section-header {
+        margin: 48px 0 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .section-header h3 {
+        font-size: 20px;
+        color: var(--text-primary);
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .stat-card {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-secondary);
+    }
+
+    .stat-value {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .stat-sub {
+        font-size: 13px;
+        color: var(--text-tertiary);
+        margin-top: 4px;
+    }
+
+    /* Charts Section */
+    .chart-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    .chart-container {
+        height: 180px;
+        width: 100%;
+        position: relative;
+        margin-top: 16px;
+        overflow: visible;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .hero-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-focus {
+            order: 1;
+        }
+
+        .hero-actions {
+            order: 2;
+        }
+    }
+</style>
+
+<div class="hero-grid">
+    <!-- Today's Sync -->
+    <div class="card-premium hero-focus">
+        <div class="hero-header">
+            <div>
+                <h1>Command Center</h1>
+                <p class="text-muted" style="margin: 0; font-size: 15px;">Your daily momentum snapshot.</p>
+            </div>
+            <span class="date-badge">{% now "l, M j" %}</span>
+        </div>
+
+        <div class="rings-container">
+            <!-- Hydration -->
+            <div class="ring-item">
+                <div class="ring-circle"
+                    style="--c: var(--accent-hydration); --p: {{ analytics.water_status.percent|default:0 }};">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle-fill" stroke-dasharray="{{ analytics.water_status.percent|default:0 }}, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                </div>
+                <div class="ring-label">Water</div>
+                <div class="ring-value">{{ analytics.water_status.today|default:0 }} ml</div>
+            </div>
+
+            <!-- Sleep -->
+            <div class="ring-item">
+                <div class="ring-circle"
+                    style="--c: var(--accent-sleep); --p: {{ analytics.sleep_status.percent|default:0 }};">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle-fill" stroke-dasharray="{{ analytics.sleep_status.percent|default:0 }}, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                </div>
+                <div class="ring-label">Sleep</div>
+                <div class="ring-value">{{ analytics.sleep_status.today|default:0 }} hrs</div>
+            </div>
+
+            <!-- Energy (Calories) -->
+            {% with today=request.user.profile.today_calories|default_if_none:0
+            goal=analytics.daily_calories|default_if_none:0 %}
+            <div class="ring-item">
+                <div class="ring-circle"
+                    style="--c: var(--accent-nutrition); --p: {{ request.user.profile.calories_percent|default_if_none:0 }};">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle-fill"
+                            stroke-dasharray="{{ request.user.profile.calories_percent|default_if_none:0 }}, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                </div>
+                <div class="ring-label">Energy</div>
+                <div class="ring-value">
+                    {{ today }} / {{ goal }} kcal
+                </div>
+            </div>
+            {% endwith %}
+
+            <!-- Weight -->
+            <div class="ring-item">
+                <div class="ring-circle" style="--c: var(--accent-weight); --p: 100;">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle-fill" stroke-dasharray="100, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                </div>
+                <div class="ring-label">Weight</div>
+                <div class="ring-value">{{ analytics.weight_status.current|default:"-" }} kg</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="card-premium hero-actions">
+        <h3>Quick Log</h3>
+
+        <div class="action-group">
+            <h5>Hydration</h5>
+            <form method="post" action="{% url 'log_today_water' %}">
+                {% csrf_token %}
+                <div class="miniform">
+                    <input type="number" name="amount" min="0" step="1" placeholder="ml" required>
+                    <button type="submit" class="btn-primary"
+                        style="background: var(--accent-hydration); box-shadow: 0 4px 12px rgba(6,182,212,0.3);">Add</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="action-group">
+            <h5>Nutrition</h5>
+            <form method="post" action="/log/nutrition/">
+                {% csrf_token %}
+                <div class="miniform" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+                    <input type="number" name="calories" min="0" step="1" placeholder="kcal" required>
+                    <input type="number" name="protein" min="0" step="0.1" placeholder="protein g" required>
+                    <input type="number" name="carbs" min="0" step="0.1" placeholder="carbs g" required>
+                    <input type="number" name="fat" min="0" step="0.1" placeholder="fat g" required>
+                    <button type="submit" class="btn-primary"
+                        style="grid-column: 1 / -1; background: var(--accent-nutrition); box-shadow: 0 4px 12px rgba(249,115,22,0.3);">Log</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="action-group">
+            <h5>Sleep</h5>
+            <form method="post" action="{% url 'log_today_sleep' %}">
+                {% csrf_token %}
+                <div class="miniform">
+                    <input type="number" name="hours" min="0" step="0.1" placeholder="hrs" required>
+                    <button type="submit" class="btn-primary"
+                        style="background: var(--accent-sleep); box-shadow: 0 4px 12px rgba(139,92,246,0.3);">Log</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="action-group">
+            <h5>Weight</h5>
+            <form method="post" action="{% url 'log_today_weight' %}">
+                {% csrf_token %}
+                <div class="miniform">
+                    <input type="number" name="kg" min="0" step="0.1" placeholder="kg" required>
+                    <button type="submit" class="btn-primary"
+                        style="background: var(--accent-weight); box-shadow: 0 4px 12px rgba(16,185,129,0.3);">Log</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Metrics Grid -->
+<div class="section-header">
+    <h3>Metabolic Profile</h3>
+</div>
+<div class="stats-grid">
+    <div class="card-premium stat-card">
+        <span class="stat-label">TDEE</span>
+        <span class="stat-value text-nutrition">{{ analytics.tdee|default:"-" }}</span>
+        <span class="stat-sub">kcal / day</span>
+    </div>
+    <div class="card-premium stat-card">
+        <span class="stat-label">BMR</span>
+        <span class="stat-value">{{ analytics.bmr|default:"-" }}</span>
+        <span class="stat-sub">kcal (basal)</span>
+    </div>
+    <div class="card-premium stat-card">
+        <span class="stat-label">BMI</span>
+        <span class="stat-value" style="color: var(--accent-primary);">{{ analytics.bmi|default:"-" }}</span>
+        <span class="stat-sub">Index</span>
+    </div>
+    <div class="card-premium stat-card">
+        <span class="stat-label">Daily Target</span>
+        <span class="stat-value text-nutrition">{{ analytics.daily_calories|default:analytics.tdee }}</span>
+        <span class="stat-sub">kcal</span>
+    </div>
+</div>
+
+<!-- Macros Grid -->
+<div class="section-header">
+    <h3>Macros (Today)</h3>
+</div>
+<div class="stats-grid">
+    <div class="card-premium stat-card">
+        <span class="stat-label">Protein</span>
+        <span class="stat-value text-hydration">
+            {% with goal=request.user.profile.protein_g|default_if_none:analytics.macros.protein_g %}
+            {{ request.user.profile.today_protein|default_if_none:0 }} / {{ goal|default:"-" }}g
+            {% endwith %}
+        </span>
+        <div class="mini-bar">
+            {% widthratio request.user.profile.today_protein|default_if_none:0
+            request.user.profile.protein_g|default_if_none:analytics.macros.protein_g|default_if_none:0 100 as
+            protein_pct %}
+            <span style="width: min(100%, {{ protein_pct }}%); background: var(--accent-hydration);"></span>
+        </div>
+    </div>
+    <div class="card-premium stat-card">
+        <span class="stat-label">Carbs</span>
+        <span class="stat-value text-nutrition">
+            {% with goal=request.user.profile.carbs_g|default_if_none:analytics.macros.carbs_g %}
+            {{ request.user.profile.today_carbs|default_if_none:0 }} / {{ goal|default:"-" }}g
+            {% endwith %}
+        </span>
+        <div class="mini-bar">
+            {% widthratio request.user.profile.today_carbs|default_if_none:0
+            request.user.profile.carbs_g|default_if_none:analytics.macros.carbs_g|default_if_none:0 100 as carbs_pct %}
+            <span style="width: min(100%, {{ carbs_pct }}%); background: var(--accent-nutrition);"></span>
+        </div>
+    </div>
+    <div class="card-premium stat-card">
+        <span class="stat-label">Fats</span>
+        <span class="stat-value text-weight">
+            {% with goal=request.user.profile.fat_g|default_if_none:analytics.macros.fat_g %}
+            {{ request.user.profile.today_fat|default_if_none:0 }} / {{ goal|default:"-" }}g
+            {% endwith %}
+        </span>
+        <div class="mini-bar">
+            {% widthratio request.user.profile.today_fat|default_if_none:0
+            request.user.profile.fat_g|default_if_none:analytics.macros.fat_g|default_if_none:0 100 as fat_pct %}
+            <span style="width: min(100%, {{ fat_pct }}%); background: var(--accent-weight);"></span>
+        </div>
+    </div>
+</div>
+
+
+<!-- Trends Section -->
+<div class="section-header">
+    <h3>Trend Analysis</h3>
+</div>
+
+<div class="chart-grid">
+    <div class="card-premium">
+        <h4>Hydration History</h4>
+        <div class="chart-container sparkline-wrap">
+            <svg class="sparkline" data-series="hydration" data-color="#06b6d4" viewBox="0 0 400 150"
+                preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="g-hydration" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+                        <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+                <path class="area" fill="url(#g-hydration)"></path>
+                <path class="line" stroke="#06b6d4"></path>
+                <circle class="sparkline-dot" r="5" fill="#000" stroke="#06b6d4" stroke-width="2"></circle>
+            </svg>
+            <div class="sparkline-tooltip"></div>
+            <div class="sparkline-empty">No data</div>
+        </div>
+    </div>
+
+    <div class="card-premium">
+        <h4>Sleep History</h4>
+        <div class="chart-container sparkline-wrap">
+            <svg class="sparkline" data-series="sleep" data-color="#8b5cf6" viewBox="0 0 400 150"
+                preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="g-sleep" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+                        <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+                <path class="area" fill="url(#g-sleep)"></path>
+                <path class="line" stroke="#8b5cf6"></path>
+                <circle class="sparkline-dot" r="5" fill="#000" stroke="#8b5cf6" stroke-width="2"></circle>
+            </svg>
+            <div class="sparkline-tooltip"></div>
+            <div class="sparkline-empty">No data</div>
+        </div>
+    </div>
+
+    <div class="card-premium">
+        <h4>Weight Trend</h4>
+        <div class="chart-container sparkline-wrap">
+            <svg class="sparkline" data-series="weight" data-color="#10b981" viewBox="0 0 400 150"
+                preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="g-weight" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#10b981" stop-opacity="0.3" />
+                        <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+                <path class="area" fill="url(#g-weight)"></path>
+                <path class="line" stroke="#10b981"></path>
+                <circle class="sparkline-dot" r="5" fill="#000" stroke="#10b981" stroke-width="2"></circle>
+            </svg>
+            <div class="sparkline-tooltip"></div>
+            <div class="sparkline-empty">No data</div>
+        </div>
+    </div>
+</div>
+
+{{ graph_series|json_script:"graph-series" }}
+
+<script>
+    /*
+        * Interactive Charting & UI Script
+        * Logic: Standard sparkline implementation with tooltip support
+        */
+    const seriesData = JSON.parse(document.getElementById("graph-series").textContent);
+
+    const clamp = (val, min, max) => Math.min(Math.max(val, min), max);
+    const getSeries = (dataObj) => (dataObj && dataObj.series ? dataObj.series : []);
+    const getBounds = (values) => {
+        if (!values.length) {
+            return { min: 0, max: 1 };
+        }
+        let min = values[0];
+        let max = values[0];
+        values.forEach((v) => {
+            if (v < min) min = v;
+            if (v > max) max = v;
+        });
+        if (min === max) {
+            const padding = Math.max(1, Math.abs(min) * 0.05);
+            min -= padding;
+            max += padding;
+        }
+        return { min, max };
+    };
+    const buildPath = (points) => points.length ? `M ${points.join(" L ")}` : "";
+
+    document.querySelectorAll(".sparkline").forEach(svg => {
+        const type = svg.dataset.series;
+        const color = svg.dataset.color || "#fff";
+        const container = svg.closest(".sparkline-wrap");
+        const tooltip = container.querySelector(".sparkline-tooltip");
+        const dot = svg.querySelector(".sparkline-dot");
+
+        // Data Extraction
+        const dataObj = seriesData[type];
+        const rawSeries = getSeries(dataObj);
+        if (!rawSeries || rawSeries.length === 0) {
+            container.classList.add("is-empty");
+            return;
+        }
+
+        const values = rawSeries.map(p => p.value).filter(v => v !== null && v !== undefined);
+        if (!values.length) {
+            container.classList.add("is-empty");
+            return;
+        }
+
+        // Setup Dimensions
+        const width = svg.viewBox.baseVal.width || svg.clientWidth || 400;
+        const height = svg.viewBox.baseVal.height || svg.clientHeight || 150;
+        const padding = 12;
+
+        // Scaling
+        const bounds = getBounds(values);
+        const range = bounds.max - bounds.min || 1;
+
+        const getY = (v) => height - padding - ((v - bounds.min) / range) * (height - 2 * padding);
+
+        // Generate Path
+        const seriesCount = rawSeries.length;
+        const nonNull = rawSeries
+            .map((p, i) => ({ index: i, value: p.value, date: p.date }))
+            .filter(p => p.value !== null && p.value !== undefined);
+
+        const nonNullPoints = nonNull.map((p) => {
+            const x = (nonNull.length === 1)
+                ? width / 2
+                : (p.index / Math.max(seriesCount - 1, 1)) * width;
+            return `${x},${getY(p.value)}`;
+        });
+
+        const lineD = buildPath(nonNullPoints);
+        const areaD = lineD ? `${lineD} L ${width},${height} L 0,${height} Z` : "";
+
+        svg.querySelector(".line").setAttribute("d", lineD);
+        svg.querySelector(".area").setAttribute("d", areaD);
+
+        // Interaction
+        const setTooltip = (displayIndex, val, date) => {
+            container.classList.add("is-hovering");
+            dot.setAttribute("cx", displayIndex);
+            dot.setAttribute("cy", getY(val));
+            dot.style.opacity = 1;
+            tooltip.style.opacity = 1;
+            tooltip.style.left = `${clamp(displayIndex, 0, width)}px`;
+            tooltip.textContent = `${date || "-"}: ${val ?? "-"} ${dataObj.unit || ""}`;
+        };
+
+        if (nonNull.length === 1) {
+            const only = nonNull[0];
+            setTooltip(width / 2, only.value, only.date);
+        }
+
+        container.addEventListener("mousemove", (e) => {
+            const rect = svg.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+
+            // Find nearest index
+            const ratio = clamp(mouseX / rect.width, 0, 1);
+            const index = Math.round(ratio * (rawSeries.length - 1));
+
+            // Snap to nearest non-null if current is null
+            let target = rawSeries[index];
+            let displayIndex = (index / Math.max(rawSeries.length - 1, 1)) * width;
+
+            if (target.value === null || target.value === undefined) {
+                const nearest = nonNull.reduce((prev, curr) =>
+                    Math.abs(curr.index - index) < Math.abs(prev.index - index) ? curr : prev
+                );
+                target = nearest;
+                displayIndex = (nonNull.length === 1)
+                    ? width / 2
+                    : (nearest.index / Math.max(rawSeries.length - 1, 1)) * width;
+            }
+
+            setTooltip(displayIndex, target.value, target.date);
+        });
+
+        container.addEventListener("mouseleave", () => {
+            dot.style.opacity = 0;
+            tooltip.style.opacity = 0;
+            container.classList.remove("is-hovering");
+        });
+    });
+</script>
+
+<style>
+    /* Chart Specific Styles */
+    .sparkline {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .sparkline .line {
+        fill: none;
+        stroke-width: 3;
+        stroke-linecap: round;
+        vector-effect: non-scaling-stroke;
+    }
+
+    .sparkline .area {
+        stroke: none;
+        opacity: 0.5;
+    }
+
+    .sparkline-dot {
+        opacity: 0;
+        transition: opacity 0.1s;
+    }
+
+    .sparkline-empty {
+        position: absolute;
+        inset: 0;
+        display: none;
+        place-items: center;
+        color: var(--text-secondary);
+        font-size: 14px;
+    }
+
+    .sparkline-wrap.is-empty .sparkline-empty {
+        display: grid;
+    }
+
+    .sparkline-tooltip {
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -100%);
+        padding: 4px 8px;
+        background: var(--bg-panel-hover);
+        border: 1px solid var(--border-highlight);
+        border-radius: 6px;
+        font-size: 12px;
+        pointer-events: none;
+        opacity: 0;
+        white-space: nowrap;
+        transition: opacity 0.1s;
+        z-index: 10;
+        color: var(--text-primary);
+    }
+</style>
+{% endblock %}
