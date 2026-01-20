@@ -44,8 +44,8 @@ FitPulse is a comprehensive fitness tracking application designed to help users 
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
-    cd <project_directory>
+    git clone https://github.com/karim26010/fitnessapp/
+    cd platform
     ```
 
 2.  **Create a virtual environment:**
