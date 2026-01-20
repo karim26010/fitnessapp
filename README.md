@@ -107,7 +107,3 @@ FitPulse is a comprehensive fitness tracking application designed to help users 
 *   `POST /log/sleep/`: Log sleep hours.
 *   `POST /log/nutrition/`: Log meals (calories/macros).
 *   `POST /log/weight/`: Log current weight.
-
-## Mobile App Development (Prompt)
-
-To build a native mobile companion app using Expo, use the prompt provided in the `PROMPT_FOR_AI.md` (or similar documentation), ensuring to point the API calls to your local backend IP (e.g., `http://10.0.2.2:8000` for Android emulators).
